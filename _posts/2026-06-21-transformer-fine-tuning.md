@@ -3,19 +3,8 @@ title: "Transformer Fine-Tuning: 언제, 어떻게 시작할까"
 description: "사전학습 모델을 내 문제에 맞게 조정할 때 먼저 결정해야 할 범위, 데이터, 평가 기준을 실무 관점에서 정리했습니다."
 date: 2026-06-21
 category: AI Engineering
-reading_time: "약 7분"
 permalink: /2026-06-transformer-fine-tuning/
 image: /assets/images/transformer-fine-tuning-hero.png
-linkedin_summary: |
-  Transformer fine-tuning은 "모델을 더 크게 쓰는 일"보다 "문제를 더 정확히 정의하는 일"에 가깝습니다.
-
-  이번 글에서는 fine-tuning을 시작하기 전에 결정해야 할 목적, 데이터 품질, 평가 기준, 운영 리스크를 실무 체크리스트 형태로 정리했습니다.
-
-  원문: https://mkmkchoi.github.io/posts/2026-06-transformer-fine-tuning/
-remember_summary: |
-  Transformer fine-tuning을 검토할 때 바로 학습부터 시작하면 비용이 커지기 쉽습니다. 목적, 데이터, 평가 기준, 운영 제약을 먼저 고정해야 합니다.
-
-  원문: https://mkmkchoi.github.io/posts/2026-06-transformer-fine-tuning/
 ---
 
 Transformer fine-tuning은 사전학습된 모델의 일반 지식을 특정 업무, 도메인, 출력 형식에 맞게 조정하는 과정입니다. 중요한 점은 "모델을 추가로 학습한다"가 아니라 "모델이 어떤 상황에서 어떤 답을 해야 하는지 더 분명하게 만든다"에 있습니다.

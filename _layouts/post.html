@@ -13,9 +13,6 @@ layout: default
     {% endif %}
     <div class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y.%m.%d" }}</time>
-      {% if page.reading_time %}
-        <span>{{ page.reading_time }}</span>
-      {% endif %}
     </div>
     {% if page.image %}
       <img class="post-hero-image" src="{{ page.image | relative_url }}" alt="{{ page.title }} 대표 이미지">
@@ -26,22 +23,4 @@ layout: default
     {{ content }}
   </div>
 
-  {% if page.linkedin_summary or page.remember_summary %}
-    <aside class="share-kit" aria-labelledby="share-title">
-      <h2 id="share-title">공유용 요약</h2>
-      {% if page.linkedin_summary %}
-        <section>
-          <h3>LinkedIn</h3>
-          {{ page.linkedin_summary | markdownify }}
-        </section>
-      {% endif %}
-      {% if page.remember_summary %}
-        <section>
-          <h3>리멤버</h3>
-          {{ page.remember_summary | markdownify }}
-        </section>
-      {% endif %}
-      <a class="source-link" href="{{ page.url | absolute_url }}">원문 링크</a>
-    </aside>
-  {% endif %}
 </article>
