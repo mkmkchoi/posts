@@ -1,13 +1,13 @@
 ---
 layout: default
-title: MK Choi IT Column
-description: IT와 AI 개발 주제를 자세히 정리하고, LinkedIn과 리멤버에는 핵심 요약과 원문 링크를 공유합니다.
+title: Tech Notes
+description: 
 ---
 
 <section class="home-hero">
-  <p class="eyebrow">IT Column Archive</p>
-  <h1>기술을 실무 언어로 다시 정리합니다.</h1>
-  <p>AI 개발, 소프트웨어 엔지니어링, 생산성 도구, 개발 워크플로를 긴 글로 정리하는 공간입니다. 외부 채널에는 짧게 공유하고, 자세한 맥락과 체크리스트는 이곳에 남깁니다.</p>
+  <p class="eyebrow">Tech Notes Archive</p>
+  <h1></h1>
+  <p></p>
 </section>
 
 <section class="post-list" aria-labelledby="latest-posts">
