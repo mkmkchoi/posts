@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">한국어-영어 번역 실험별 BLEU 점수</title>
+  <desc id="desc">모델 및 토크나이저 조정, Beam Search, 데이터 증량, warmup 조정 단계에서 BLEU가 2.17부터 30.35까지 상승했습니다.</desc>
+  <rect width="960" height="560" rx="18" fill="#ffffff"/>
+  <text x="48" y="58" fill="#102a43" font-family="Segoe UI, Noto Sans KR, sans-serif" font-size="27" font-weight="700">실험 단계별 BLEU</text>
+  <text x="48" y="88" fill="#667085" font-family="Segoe UI, Noto Sans KR, sans-serif" font-size="15">한국어 → 영어 번역 · BLEU 점수 (높을수록 기준 번역과 n-gram 겹침이 큼)</text>
+  <g stroke="#e5ecea" stroke-width="1">
+    <line x1="370" y1="125" x2="370" y2="470"/><line x1="510" y1="125" x2="510" y2="470"/>
+    <line x1="650" y1="125" x2="650" y2="470"/><line x1="790" y1="125" x2="790" y2="470"/>
+  </g>
+  <g fill="#667085" font-family="Segoe UI, Noto Sans KR, sans-serif" font-size="13" text-anchor="middle">
+    <text x="370" y="495">0</text><text x="510" y="495">10</text><text x="650" y="495">20</text><text x="790" y="495">30</text>
+  </g>
+  <g fill="#344054" font-family="Segoe UI, Noto Sans KR, sans-serif" font-size="15">
+    <text x="48" y="151">초기 구성</text><text x="48" y="191">SentencePiece</text>
+    <text x="48" y="231">4층 Encoder / Decoder</text><text x="48" y="271">Transformer base 구성</text>
+    <text x="48" y="311">Beam Search 적용</text><text x="48" y="351">학습 데이터 증량</text>
+    <text x="48" y="391">warmup 40,000 Step</text>
+  </g>
+  <g>
+    <rect x="370" y="132" width="30.4" height="23" rx="5" fill="#8ba9a5"/>
+    <rect x="370" y="172" width="52.2" height="23" rx="5" fill="#8ba9a5"/>
+    <rect x="370" y="212" width="99.7" height="23" rx="5" fill="#5c9991"/>
+    <rect x="370" y="252" width="164.5" height="23" rx="5" fill="#5c9991"/>
+    <rect x="370" y="292" width="197.1" height="23" rx="5" fill="#31877e"/>
+    <rect x="370" y="332" width="336.6" height="23" rx="5" fill="#31877e"/>
+    <rect x="370" y="372" width="424.9" height="23" rx="5" fill="#0f766e"/>
+  </g>
+  <g fill="#102a43" font-family="Segoe UI, Noto Sans KR, sans-serif" font-size="14" font-weight="700">
+    <text x="410" y="149">2.17</text><text x="432" y="189">3.73</text>
+    <text x="480" y="229">7.12</text><text x="545" y="269">11.75</text>
+    <text x="578" y="309">14.08</text><text x="717" y="349">24.04</text>
+    <text x="805" y="389">30.35</text>
+  </g>
+  <text x="48" y="535" fill="#667085" font-family="Segoe UI, Noto Sans KR, sans-serif" font-size="13">각 단계에서 여러 학습·모델 설정이 바뀌었으므로 BLEU 변화는 단일 요인의 인과 효과를 뜻하지 않습니다.</text>
+</svg>
